@@ -1,0 +1,18 @@
+# `FZISKMInstance`
+> A instance
+
+![](/img/docs/api-reference/UZISKMInstancedSkeletalMeshComponent-1.png)
+
+import { FunctionFlags, Type } from '@site/docs/components/_ziskm.mdx';
+
+
+## Member List
+| | Return Value | Name | Description |
+| - |------------ | ---- | ----------- |
+| <FunctionFlags.BlueprintCallable/> | <Type.Transform/> | `Transform` |
+| | <Type.uint32/> | `OldLOD` | Written by render thread
+| | <Type.uint32/> | `CurrentLOD` | Written by render thread
+| | <Type.AtomicInt32/> | `ProxyIdx` | Index of the instance in the render data cache, written by Render Thread
+| <FunctionFlags.BlueprintCallable/> | <Type.UZISKMAnimInstancePtr/> | `AnimInstance` |
+| | TArray<<Type.Transform/>> | `ComponentSpaceTransformsArray` |
+| | TArray<<Type.uint8/>> | `BoneVisibilityStates` |

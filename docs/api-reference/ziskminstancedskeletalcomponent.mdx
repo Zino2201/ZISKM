@@ -1,0 +1,60 @@
+# `UZISKMInstancedSkeletalMeshComponent`
+> Class allowing to instantiate multiple instances using the same skeletal mesh
+
+![](/img/docs/api-reference/UZISKMInstancedSkeletalMeshComponent-1.png)
+
+import { FunctionFlags, Type } from '@site/docs/components/_ziskm.mdx';
+
+## Function List
+| | Return Value | Name | Description |
+| - |------------ | ---- | ----------- |
+| <FunctionFlags.BlueprintCallable/> | <Type.int32/> | [`AddInstance`](#addinstance) | Add a instance
+| <FunctionFlags.BlueprintCallable/> | TArray<<Type.int32/>> | [`AddInstances`](#addinstance) | Add multiple instances
+| <FunctionFlags.BlueprintCallable/> | <Type.bool/> | [`RemoveInstance`](#removeinstance) | Remove a instance
+| <FunctionFlags.BlueprintCallable/> | <Type.void/> | [`UpdateTransform`](#updatetransform) | Update the transform of a instance
+| <FunctionFlags.BlueprintCallable/> | <Type.void/> | [`RemoveAllInstances`](#removeallinstances) | Remove all instances
+| <FunctionFlags.BlueprintCallable/> | <Type.FZISKMInstance/> | [`GetInstance`](#getinstance) | Get the specified instance.
+
+## Functions
+
+### `AddInstance`
+> Add a instance. 
+**Returns instance index.**
+
+| Type | Name | Description |
+| --- | ---- | ---------- |
+| <Type.Transform/> | Transform | Initial transform of the instance
+
+### `AddInstances`
+> Add multiple instances. 
+**Returns instance indices.**
+
+| Type | Name | Description |
+| --- | ---- | ---------- |
+| TArray<<Type.Transform/>> | Transforms | Initial transform of the instances
+
+### `RemoveInstance`
+> Remove a instance. 
+**Returns `true` if succeeded.**
+
+| Type | Name | Description |
+| --- | ---- | ---------- |
+| <Type.int32/> | Instance | Instance to remove
+
+### `UpdateTransform`
+> Update the transform of a instance
+
+| Type | Name | Description |
+| --- | ---- | ---------- |
+| <Type.int32/> | Instance | Instance to update
+| <Type.Transform/> | Transform | New transform
+
+### `RemoveAllInstances`
+> Remove all instance
+
+### `GetInstance`
+> Get the specified instance. **WARNING: Do not store this reference ! The underlying sparse array used by the component is NOT stable.**. Returns the instance.
+
+| Type | Name | Description |
+| --- | ---- | ---------- |
+| <Type.int32/> | Instance | Instance to update

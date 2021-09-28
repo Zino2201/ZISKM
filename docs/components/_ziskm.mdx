@@ -1,0 +1,36 @@
+import { useActiveVersion } from '@theme/hooks/useDocs';
+
+export const getActiveVersionPath = () => {
+	const activeVersion = useActiveVersion();
+	return activeVersion.path;
+};
+
+export const FunctionFlagsComponent = (img, title) => (
+	<a class="function-flags">
+		<img src={img} title={title} />
+	</a>
+);
+
+export const TypeComponent = (title) => (
+	<a class="type">{title}</a>
+);
+
+export const StructComponent = (title, page) => (
+	<a class="struct" href={`${getActiveVersionPath()}api-reference/${page}`}>{title}</a>
+);
+
+export const FunctionFlags = {
+    BlueprintCallable: () => FunctionFlagsComponent("/static/img/api_function_meta_blueprint.png", "Blueprint Callable"),
+};
+
+export const Type = {
+	void: () => TypeComponent("void"),
+	bool: () => TypeComponent("bool"),
+	uint8: () => TypeComponent("uint8"),
+	uint32: () => TypeComponent("uint32"),
+	int32: () => TypeComponent("int32"),
+	Transform: () => TypeComponent("FTransform"),
+	AtomicInt32: () => TypeComponent("std::atomic_int32_t"),
+	UZISKMAnimInstancePtr: () => TypeComponent("UZISKMAnimInstance*"),
+	FZISKMInstance: () => StructComponent("FZISKMInstance", "ziskminstance"),
+};
