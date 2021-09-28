@@ -6,12 +6,12 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 (module.exports = {
   title: 'ZISKM',
   tagline: 'Zino Instanced Skeletal Mesh',
-  url: 'https://ziskm.github.io',
-  baseUrl: '/',
+  url: 'https://zino2201.github.io',
+  baseUrl: '/ZISKM/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  projectName: 'ziskm.github.io',
+  projectName: 'ZISKM',
   organizationName: 'Zino2201',
   trailingSlash: false,
 
