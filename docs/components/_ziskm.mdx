@@ -20,7 +20,11 @@ export const StructComponent = (title, page) => (
 );
 
 export const FunctionFlags = {
-    BlueprintCallable: () => FunctionFlagsComponent("/static/img/api_function_meta_blueprint.png", "Blueprint Callable"),
+    BlueprintCallable: () => FunctionFlagsComponent("/img/api_function_meta_blueprint.png", "Blueprint Callable"),
+};
+
+export const PropertyFlags = {
+    BlueprintReadOnly: () => FunctionFlagsComponent("/img/api_function_meta_blueprint.png", "Blueprint Read Only"),
 };
 
 export const Type = {
