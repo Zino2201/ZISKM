@@ -14,6 +14,8 @@ import { FunctionFlags, Type } from '@site/docs/components/_ziskm.mdx';
 | <FunctionFlags.BlueprintCallable/> | <Type.void/> | [`UpdateTransform`](#updatetransform) | Update the transform of a instance
 | <FunctionFlags.BlueprintCallable/> | <Type.void/> | [`RemoveAllInstances`](#removeallinstances) | Remove all instances
 | <FunctionFlags.BlueprintCallable/> | <Type.FZISKMInstance/>& | [`GetInstance`](#getinstance) | Get the specified instance.
+| <FunctionFlags.BlueprintCallable/> | <Type.void/> | [`SetSkeletalMesh`](#setskeletalmesh) |
+| <FunctionFlags.BlueprintCallable/> | <Type.void/> | [`SetAnimClass`](#setanimclass) |
 
 ## Functions
 
@@ -23,7 +25,7 @@ import { FunctionFlags, Type } from '@site/docs/components/_ziskm.mdx';
 
 | Type | Name | Description |
 | --- | ---- | ---------- |
-| <Type.Transform/> | Transform | Initial transform of the instance
+| const <Type.Transform/>& | Transform | Initial transform of the instance
 
 ### `AddInstances`
 > Add multiple instances. 
@@ -31,7 +33,7 @@ import { FunctionFlags, Type } from '@site/docs/components/_ziskm.mdx';
 
 | Type | Name | Description |
 | --- | ---- | ---------- |
-| TArray<<Type.Transform/>> | Transforms | Initial transform of the instances
+| const TArray<<Type.Transform/>>& | Transforms | Initial transform of the instances
 
 ### `RemoveInstance`
 > Remove a instance. 
@@ -47,7 +49,7 @@ import { FunctionFlags, Type } from '@site/docs/components/_ziskm.mdx';
 | Type | Name | Description |
 | --- | ---- | ---------- |
 | <Type.int32/> | Instance | Instance to update
-| <Type.Transform/> | Transform | New transform
+| const <Type.Transform/>& | Transform | New transform
 
 ### `RemoveAllInstances`
 > Remove all instance
@@ -57,4 +59,16 @@ import { FunctionFlags, Type } from '@site/docs/components/_ziskm.mdx';
 
 | Type | Name | Description |
 | --- | ---- | ---------- |
-| <Type.int32/> | Instance | Instance to update
+| const <Type.int32/> | Instance | Instance to update
+
+### `SetSkeletalMesh`
+
+| Type | Name | Description |
+| --- | ---- | ---------- |
+| <Type.USkeletalMesh/>* | SkeletalMesh |
+
+### `SetAnimClass`
+
+| Type | Name | Description |
+| --- | ---- | ---------- |
+| const TSubclassOf<<Type.UZISKMAnimInstance/>>& | Class |

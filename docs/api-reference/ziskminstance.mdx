@@ -13,6 +13,7 @@ import { PropertyFlags, Type } from '@site/docs/components/_ziskm.mdx';
 | | <Type.uint32/> | `OldLOD` | Written by render thread
 | | <Type.uint32/> | `CurrentLOD` | Written by render thread
 | | <Type.AtomicInt32/> | `ProxyIdx` | Index of the instance in the render data cache, written by Render Thread
-| <PropertyFlags.BlueprintReadOnly/> | <Type.UZISKMAnimInstancePtr/> | `AnimInstance` |
+| <PropertyFlags.BlueprintReadOnly/> | <Type.UZISKMAnimInstance/>* | `AnimInstance` |
 | | TArray<<Type.Transform/>> | `ComponentSpaceTransformsArray` |
 | | TArray<<Type.uint8/>> | `BoneVisibilityStates` |
+| <PropertyFlags.BlueprintReadWrite/> | TArray<<Type.float/>> | `CustomData` | Custom data that can be used for storing things to use for e.g animbp or other

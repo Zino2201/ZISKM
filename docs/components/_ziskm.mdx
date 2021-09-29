@@ -20,11 +20,12 @@ export const StructComponent = (title, page) => (
 );
 
 export const FunctionFlags = {
-    BlueprintCallable: () => FunctionFlagsComponent("/img/api_function_meta_blueprint.png", "Blueprint Callable"),
+    BlueprintCallable: () => FunctionFlagsComponent("/img/docs/api_function_meta_blueprint.png", "Blueprint Callable"),
 };
 
 export const PropertyFlags = {
-    BlueprintReadOnly: () => FunctionFlagsComponent("/img/api_function_meta_blueprint.png", "Blueprint Read Only"),
+    BlueprintReadOnly: () => FunctionFlagsComponent("/img/docs/api_function_meta_blueprint.png", "Blueprint Read Only"),
+	BlueprintReadWrite: () => FunctionFlagsComponent("/img/docs/api_function_meta_blueprint.png", "Blueprint Read/Write"),
 };
 
 export const Type = {
@@ -33,8 +34,10 @@ export const Type = {
 	uint8: () => TypeComponent("uint8"),
 	uint32: () => TypeComponent("uint32"),
 	int32: () => TypeComponent("int32"),
+	float: () => TypeComponent("float"),
 	Transform: () => TypeComponent("FTransform"),
 	AtomicInt32: () => TypeComponent("std::atomic_int32_t"),
-	UZISKMAnimInstancePtr: () => TypeComponent("UZISKMAnimInstance*"),
+	USkeletalMesh: () => TypeComponent("USkeletalMesh"),
+	UZISKMAnimInstance: () => TypeComponent("UZISKMAnimInstance"),
 	FZISKMInstance: () => StructComponent("FZISKMInstance", "ziskminstance"),
 };

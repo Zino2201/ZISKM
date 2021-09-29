@@ -38,6 +38,9 @@ Later on, you can try getting the underlying instance structure using [`GetInsta
 ## Moving a instance
 In order to move a instance, you can call [`UpdateTransform()`](/api-reference/ziskminstancedskeletalcomponent.mdx#updatetransform), this will add your instance to a list of instances that need transform updates. These updates are then uploaded to the GPU at the end of the frame before rendering.
 
+## Custom Data
+You can associate custom data using the `CustomData` property of [FZISKMInstance](/api-reference/ziskminstance.mdx). This can be used to store things like Velocity, indices or other to feed to other systems like your Anim Blueprint.
+
 ## Misc
 ### Culling
 Culling is automatically managed by the component by default using the bounds of the Skeletal Mesh. 
