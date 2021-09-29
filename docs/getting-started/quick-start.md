@@ -25,6 +25,12 @@ A `ZISKMSkeletalMesh` component function like a basic `SkeletalMesh`, you can pr
 
 ![Blueprint Overview](/img/docs/getting-started/3-bp.png)
 
+You can now select a Skeletal Mesh and a Anim Blueprint.
+
+:::warning
+Your Anim Blueprint must derive from `UZISKMAnimInstance` to function properly!
+:::
+
 ## Creating a spawner Actor Blueprint
 Now, we are going to create a simple actor blueprint that will create a bunch of ours Actors.
 ![Generator Blueprint Code](/img/docs/getting-started/4-gen.png)
