@@ -15,21 +15,15 @@ In this example, we will create an Actor but you can also use other classes like
 ![Blueprint Class Selection](/img/docs/getting-started/2-create-bp.png)
 
 ## Adding a ZISKM Skeletal Mesh Component
-Open up your Blueprint and add a `ZISKMSkeletalMesh` component.
-:::note
-In this guide, we are using the `ZISKMSkeletalMesh` component, which allows easily to instantiate skeletal meshes mimicking Unreal Engine's 4.22+ renderer with Static Meshes. For a more complex approach, you may use the `ZISKMInstancedSkeletalMesh` component which use a `InstancedStaticMesh`-like interface and maybe more appropriate with custom ECS systems and such.
-:::
+Open up your Blueprint and add a `UZISKMInstancedSkeletalMeshComponent` component.
+
 ![Add Component](/img/docs/getting-started/3-add-comp.png)
 
-A `ZISKMSkeletalMesh` component function like a basic `SkeletalMesh`, you can provide an Anim Blueprint Class and a Skeletal Mesh.
+A `UZISKMInstancedSkeletalMeshComponent` component function like a basic `USkeletalMesh`, you can provide an Anim Blueprint Class and a Skeletal Mesh.
 
 ![Blueprint Overview](/img/docs/getting-started/3-bp.png)
 
 You can now select a Skeletal Mesh and a Anim Blueprint.
-
-:::warning
-Your Anim Blueprint must derive from `UZISKMAnimInstance` to function properly!
-:::
 
 ## Creating a spawner Actor Blueprint
 Now, we are going to create a simple actor blueprint that will create a bunch of ours Actors.

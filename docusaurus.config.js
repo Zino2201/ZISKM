@@ -4,15 +4,15 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 // With JSDoc @type annotations, IDEs can provide config autocompletion
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 (module.exports = {
-  title: 'ZISKM',
+  title: 'Zino Instanced Skeletal Mesh',
   tagline: 'Zino Instanced Skeletal Mesh',
   url: 'https://zino2201.github.io',
   baseUrl: '/ZISKM/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  projectName: 'ZISKM',
-  organizationName: 'Zino2201',
+  projectName: 'Zino Instanced Skeletal Mesh',
+  organizationName: 'Zino Games',
   trailingSlash: false,
 
   presets: [
@@ -47,7 +47,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
         disableSwitch: false,
       },
       navbar: {
-        title: 'ZISKM',
+        title: 'Zino Instanced Skeletal Mesh Documentation',
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
