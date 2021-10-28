@@ -5,14 +5,14 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 (module.exports = {
   title: 'ziskm',
-  tagline: 'Zino Instanced Skeletal Mesh',
+  tagline: 'Zino Instanced Skeletal Mesh official documentation',
   url: 'https://zino2201.github.io',
   baseUrl: '/ZISKM/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   projectName: 'ziskm',
-  organizationName: 'Zino Games',
+  organizationName: 'Zino2201',
   trailingSlash: false,
 
   presets: [
