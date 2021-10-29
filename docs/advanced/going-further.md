@@ -1,0 +1,3 @@
+# Going Further
+
+We have plans to create a more complete solution, we have a working (through bugged) version of the plugin that have its own animation system, allowing insane amount of instances (10k+). For now we're going to continue to support the marketplace version of the plugin since it will meets the need of most people, but we are greatly interested of developing the other version! Feel free to contact us if you need special integrations.

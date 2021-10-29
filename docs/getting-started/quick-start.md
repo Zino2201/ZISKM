@@ -10,7 +10,7 @@ Zino Instanced Skeletal Mesh has no dependencies, so you can just install it dir
 We will now create a simple actor blueprint.
 
 :::note
-In this example, we will create an Actor but you can also use other classes like Pawn or Character as long as they are Characters.
+In this example, we will create an Actor but you can also use other classes like Pawn or Character.
 :::
 ![Blueprint Class Selection](/img/docs/getting-started/2-create-bp.png)
 
@@ -27,7 +27,8 @@ You can now select a Skeletal Mesh and a Anim Blueprint.
 
 ## Creating a spawner Actor Blueprint
 Now, we are going to create a simple actor blueprint that will create a bunch of ours Actors.
-![Generator Blueprint Code](/img/docs/getting-started/4-gen.png)
+<iframe width="100%" height="453" src="https://blueprintue.com/render/fn7csos_/" scrolling="no" allowfullscreen></iframe>
+
 This simple code will generate about 20 of our Actors aligned on the X axis. 
 
 ## Result
