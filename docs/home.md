@@ -13,3 +13,11 @@ The goal of the plugin is to provide easy skeletal mesh instancing allowing high
 :::info
 The documentation is still in work in progress, feel free to contribute [here](https://github.com/Zino2201/ZISKM).
 :::
+
+### Special Thanks
+
+- Benja from iolaCorp (try out WorldScape plugin for UE4 !) - Testing
+- thetimboss from Lines Studio (try out Helicopter Simulator on Steam !)- Testing
+- Tonkh
+- MaxEstLa (try out UpGun !)
+- Amnedge - Testing
