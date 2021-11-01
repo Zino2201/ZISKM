@@ -11,6 +11,7 @@ Most performance problems will arise from ticking, AI and not the plugin general
 - Ensure you have properly configured optimization parameters, available in the Details panel of a `UZISKMInstancedSkeletalMeshComponent`, these are used to reduce animation ticking rate. More informations in the animation ticking rate page. **This is extremly important and is an important part of the plugin.**
 - Ensure you have a simple animation blueprint
 - Do not abuse interpolation
+- Use the built-in crowd system if you're trying to render crowds and don't require a per-instance animation
 
 For additional tips related to the animation system of Unreal, checks https://docs.unrealengine.com/4.26/en-US/AnimatingObjects/SkeletalMeshAnimation/Optimization/
 
