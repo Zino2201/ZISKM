@@ -4,7 +4,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 // With JSDoc @type annotations, IDEs can provide config autocompletion
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 (module.exports = {
-  title: 'ziskm',
+  title: 'Zino Instanced Skeletal Mesh Documentation',
   tagline: 'Zino Instanced Skeletal Mesh official documentation',
   url: 'https://zino2201.github.io',
   baseUrl: '/ZISKM/',
@@ -50,7 +50,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
         title: 'Zino Instanced Skeletal Mesh Documentation',
         logo: {
           alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          src: 'img/icon.png',
         },
         items: [
           {
