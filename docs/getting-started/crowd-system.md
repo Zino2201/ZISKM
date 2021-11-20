@@ -1,6 +1,6 @@
 # Crowd System
 
-:::warn
+:::caution
 This feature is still considered **experimental**.
 :::
 
