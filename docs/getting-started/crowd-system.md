@@ -1,5 +1,9 @@
 # Crowd System
 
+:::warn
+This feature is still considered **experimental**.
+:::
+
 Zino Instanced Skeletal Mesh includes a built-in crowd system allowing to easily make crowds with a low performance cost since generally you don't need to have a per-instance animation for these. It is greatly inspired from Unreal's animation sharing system, but simpler. The system works by creating multiple "buckets" per animation state, each bucket has its own animation blueprint ticking. All of this use the Master Pose Component.
 
 ## Setup
