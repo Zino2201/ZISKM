@@ -12,6 +12,7 @@ Most performance problems will arise from ticking, AI and not the plugin general
 - Ensure you have a simple animation blueprint
 - Do not abuse interpolation
 - Use the built-in crowd system if you're trying to render crowds and don't require a per-instance animation
+- Use the animation budget system to dynamically limit animation processing time
 
 For additional tips related to the animation system of Unreal, checks https://docs.unrealengine.com/4.26/en-US/AnimatingObjects/SkeletalMeshAnimation/Optimization/
 
